@@ -10,6 +10,7 @@ const updateCount = (element) => {
     if (value < initialValue) {
       clearInterval(updateText);
       element.textContent = `${value}+`;
+      return;
     }
     element.textContent = `${initialValue}+`;
   }, 1);
